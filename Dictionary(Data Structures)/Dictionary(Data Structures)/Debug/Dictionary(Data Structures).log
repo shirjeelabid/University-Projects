@@ -1,0 +1,8 @@
+﻿  MyForm.cpp
+d:\university\3rd semester\data structures\project\dictionary(data structures)\dictionary(data structures)\Source.h(32): warning C4018: '<' : signed/unsigned mismatch
+d:\university\3rd semester\data structures\project\dictionary(data structures)\dictionary(data structures)\Source.h(48): warning C4018: '<' : signed/unsigned mismatch
+d:\university\3rd semester\data structures\project\dictionary(data structures)\dictionary(data structures)\Source.h(69): warning C4018: '<' : signed/unsigned mismatch
+d:\university\3rd semester\data structures\project\dictionary(data structures)\dictionary(data structures)\Source.h(83): warning C4305: 'return' : truncation from 'int' to 'bool'
+d:\university\3rd semester\data structures\project\dictionary(data structures)\dictionary(data structures)\source.h(94): warning C4715: 'Tries::suggestions' : not all control paths return a value
+  .NETFramework,Version=v4.5.AssemblyAttributes.cpp
+  Dictionary(Data Structures).vcxproj -> D:\University\3rd Semester\Data Structures\Project\Dictionary(Data Structures)\Debug\Dictionary(Data Structures).exe
