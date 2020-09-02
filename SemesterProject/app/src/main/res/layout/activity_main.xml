@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="187dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Welcome to Expense Tracker"
+            android:textStyle="bold|italic"
+            android:textSize="30dp"
+            android:id="@+id/MainActivityLabel"
+            android:layout_marginTop="10dp"
+            android:textColor="	#FFFFFF"
+            android:fontFamily="sans-serif-condensed"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:id="@+id/MainEmailLabel"
+            android:text="Email or Username"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:textColor="	#FFFFFF"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="230dp"
+            android:id="@+id/EmailLogin"
+            android:hint="Enter your E-mail"
+            />
+
+        <TextView
+            android:id="@+id/PasswordLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Passlogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="310dp"
+            android:layout_marginBottom="48dp"
+            android:text="Password"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:textColor="	#FFFFFF"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="340dp"
+            android:id="@+id/Passlogin"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="410dp"
+            android:text="Login"
+            android:textStyle="bold|italic"
+            android:id="@+id/btnLogin"
+            android:background="@drawable/custom_button"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SignupText"
+            android:text="Don't have an account!!"
+            android:layout_marginTop="490dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:textColor="	#FFFFFF"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="480dp"
+            android:textStyle="bold|italic"
+            android:text="SignUp"
+            android:id="@+id/btnSignUp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/custom_button" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="272dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SignupLabel"
+            android:text="Sign Up"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SignupEmailLabel"
+            android:text="Email or Username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/EmailSignup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"
+            android:hint="Enter your Email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SignupPswdLabel"
+            android:text="Password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="270dp"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/PswdSignup"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/ConfirmPswdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:text="Confirm Password"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ConfirmPswdSignup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="415dp"
+            android:hint="Re-Enter your Password"
+            android:inputType="textPassword"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnCreateAcc"
+            android:text="Create Account"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="480dp"
+            android:textStyle="bold|italic"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExpensesActivity"
+    android:background="@drawable/expenses">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="209dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/income_main_title"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Expenses"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Enter Expense:"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="135dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/get_income"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="162dp"
+            android:layout_marginTop="120dp"
+            android:hint="Add Expense"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Select Category:"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            />
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="205dp"
+            android:layout_marginLeft="185dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Select the Date:"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/textView1"
+            android:textColor="#000"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/get_date"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="174dp"
+            android:layout_marginTop="268dp"
+            android:hint="Add Date" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Add_category"
+            android:text="Add Expense"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/relative4"/>
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
