@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7602C85F-B789-4DDF-9AEC-B2746920E585}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChatClient</RootNamespace>
+    <AssemblyName>ChatClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baby-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baby-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bully.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burglar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheeky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheeky-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confused.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confused-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confused-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creepy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crying-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crying-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crying-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dazed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dazed-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dazed-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dazed-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dead-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dead-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dead-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dead-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dead-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dead-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desperate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desperate-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detective.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dissapointment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drunk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emo-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emo-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emoticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\evil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faint-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flirt-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flirt-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flirty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gangster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geek-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gentleman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gentleman-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gentleman-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gentleman-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gentleman-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ginger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girl-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goofy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goofy-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goofy-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goofy-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goofy-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grubby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grubby-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harry-potter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heisenberg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hipster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hipster-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hipster-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in-love.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in-love-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\afro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\afro-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arguing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrogant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asian-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bored.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bored-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bored-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confused-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crying.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\embarrassed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emoticons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kissing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nerd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ninja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quiet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secret.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\surprised.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\surprised-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suspicious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suspicious-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tongue-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tongue-out-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unhappy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grinning_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Whack-Windows-Live-Messenger-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
