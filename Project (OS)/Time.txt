@@ -1,0 +1,31 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#include <time.h>
+
+void printTimeSince(clock_t tStart);
+
+int main() {
+    clock_t tStart,t_End;
+    time(&tStart);
+    int num;
+    printf("Enter a num: ");
+    scanf("%d",&num);
+    scanf("%d",&num);
+    scanf("%d",&num);
+    scanf("%d",&num);
+    printf("Time taken: %.2fs\n", (double)(time(&t_End) - tStart)/*/CLOCKS_PER_SEC*/);
+    printf("\nKaam kar rha hai khush ho ja\n");
+    return 0;
+}
+
+void printTimeSince(clock_t tStart)
+{
+  printf("Time taken: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
+}

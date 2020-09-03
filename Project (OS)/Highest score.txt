@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <pthread.h>
+
+
+void *highestscore(void *s)
+{
+int *a=(int *)s;
+int score=*a;
+	FILE *out_file = fopen("highest.txt", "a");
+	fprintf(out_file,"%d\n",score);
+	fclose(out_file);
+	int i = 0;
+	FILE *in_file = fopen("highest.txt", "r");
+	int high;
+	int higharr[100];
+	int max = 0;
+int c;
+	while (!feof(in_file))
+	{
+fscanf(in_file,"%d",&high);
+		if (high>max)
+			max = high;
+
+	}
+               printf("\n\t\t\t\tHall of fame:-\n\n");
+                printf("\t\t\t\tHighest Scores\n\n");
+                printf("Highest Score: %d",max);
+                printf("\n");
+	fclose(in_file);
+}
+
+int main()
+{
+pthread_t tid;
+for(int i=0;i<5;i++)
+{
+int n=105+i;
+pthread_create(&(tid),NULL,highestscore,&n);
+pthread_join(tid,NULL);
+}
+
+}
+
+
