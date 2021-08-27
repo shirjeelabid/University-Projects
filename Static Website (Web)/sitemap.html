@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign-in & Sign-up Form</title>
+  <meta charset='UTF-8'>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container-home">
+ <!--Nav Bar-->
+ <div class="header"> 
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="info.html" >Cars Info</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a class="active" href="sitemap.html">Form</a></li>
+</ul>
+</div>
+<!--Heading-->
+ <div id = "heading">
+   <i><h1>Form</h1></i>
+ </div>
+<!--Friday-->
+
+<div id = "description">
+  <span><p>The form for different credentials is following:</p></span>
+</div>
+
+
+<div class="cred-form">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Email">
+
+   <p>Please select gender:</p>
+  <input type="radio" id="male" name="fav_language" value="MALE">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="fav_language" value="FEMALE">
+  <label for="female">Female</label><br>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="america">America</option>
+      <option value="pakistan">Pakistan</option>
+      <option value="india">India</option>
+      <option value="bangladesh">Bangladesh</option>
+      <option value="denmark">Denmark</option>
+      <option value="scotland">Scotland</option>
+      <option value="uk">UK</option>
+      <option value="germany">Germany</option>
+      <option value="turkey">Turkey</option>
+      <option value="russia">Russia</option>
+      <option value="china">China</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+
+
+</body>
+</html>
